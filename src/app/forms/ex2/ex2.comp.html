@@ -1,0 +1,20 @@
+<form [formGroup]="angForm" novalidate>
+    <div class="form-group">
+      <label class="center-block">Color:
+        <input class="form-control" formControlName="color" minlength="2" maxlength="10">
+      </label>
+    </div>
+    <div *ngIf="angForm.controls['color'].invalid && (angForm.controls['color'].dirty || angForm.controls['color'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['color'].errors && angForm.controls['color'].errors['required']">
+            Color is required.
+        </div>
+        <div *ngIf="angForm.controls['color'].errors && angForm.controls['color'].errors['minlength']">
+            Color is atleast 2 characters required.
+        </div>
+        <div *ngIf="angForm.controls['color'].errors && angForm.controls['color'].errors['maxlength']">
+            Color is Not Exceed 10 Characters.
+        </div>
+    </div>
+</form>
+<p>Form value: {{ angForm.value | json }}</p>
+<p>Form status: {{ angForm.status | json }}</p>

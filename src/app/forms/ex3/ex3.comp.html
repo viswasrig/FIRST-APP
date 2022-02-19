@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="d-flex justify-content-center justify-content-md-center align-items-center vh-100 p1-div">
+        <div class="d-flex mx-auto p2-div">
+            <div class="p3-div">
+                <ul class="nav nav-tabs" id="p3-nav-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" [ngClass]="selectedTab==1?'active':''" id="login-tab" (click)="selectTab(1)" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" [ngClass]="selectedTab==2?'active':''" id="setup-tab" (click)="selectTab(2)" data-toggle="tab" href="#setup" role="tab" aria-controls="setup" aria-selected="false">SetUp</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" [ngClass]="selectedTab==3?'active':''" id="reset-tab" (click)="selectTab(3)" data-toggle="tab" href="#reset" role="tab" aria-controls="reset" aria-selected="false" >Reset</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" [ngClass]="selectedTab==1?'show active':''"  id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <p>Login Form</p>
+                    </div>
+                    <div class="tab-pane fade" [ngClass]="selectedTab==2?'show active':''" id="setup" role="tabpanel" aria-labelledby="setup-tab">
+                        <p>SetUp Form</p>
+                    </div>
+                    <div class="tab-pane fade" [ngClass]="selectedTab==3?'show active':''" id="reset" role="tabpanel" aria-labelledby="reset-tab">
+                        <p>Reset</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

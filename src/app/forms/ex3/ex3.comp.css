@@ -1,0 +1,19 @@
+.p1-div{
+    background-color:#a2bfcf;
+}
+
+.p2-div{
+    background-color:#4d9d7a;
+    width:70%;
+    height:70%
+}
+.p3-div{
+    color:#FFF;
+    width:100%;
+}
+
+.p3-div .nav-item{
+    width:33%;
+    border:1px solid #a2bfcf;
+    background-color:#d4e521;
+}

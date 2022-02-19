@@ -1,0 +1,12 @@
+{
+    "companyName":"Raja Pushpa",
+    "address":{
+       "addressLine1":"12-1-27C,Financial Dist",
+       "addressLine2":"",
+       "area":"Gachibowli",
+       "city":"Hyderabad",
+       "state":"TG",
+       "zip":"500072"
+    },
+    "detailsTitle":"Organisation Details"
+}

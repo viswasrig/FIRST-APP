@@ -1,0 +1,6 @@
+<h1>Parent Component ( BeginnerEx2Component)</h1>
+<div class="col-6">{{'Parent Value: ' + pValue}}</div>
+<div class="col-6" *ngIf="updatedValue>-1">
+    {{'Parent Received Value From Child: ' + updatedValue}}
+</div>
+<b-ex2-cf [cValue]="pValue" (outValue)="getValueFromChild($event)"></b-ex2-cf>
